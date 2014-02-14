@@ -1,23 +1,18 @@
-mm-slim-template
-================
+# Grixins
 
-A Middleman Template with a basic SLIM/SCSS setup
+Simple SCSS mixins for creating grid systems.
 
-## Use
+## Demo app
 
-    cd ~/.middleman
-    git clone git@github.com:lchamb/mm-slim-template.git
+The demo app uses [Middleman](http://middlemanapp.com) to render SCSS but you can use whatever you like.
 
-Now mm-slim-template should show up as a middleman template when you start a new project. To list available templates:
+To setup the demo app with Middleman:
 
-    $ middleman init --help
-
-To create a new app based on this template.
-
-    $ middleman init NAME -T=mm-slim-template
-    $ cd NAME
+    $ git clone git@github.com:lchamb/grixins.git
+    $ cd grixins
     $ bundle install
-    
+    $ middleman server
+
 ## License
 
 MIT License
