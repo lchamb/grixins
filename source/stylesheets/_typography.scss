@@ -1,0 +1,166 @@
+//
+// typography
+//
+
+// famous ratios
+$PERFECT_FOURTH:          (4/3);
+$PERFECT_FIFTH:           (3/2);
+$GOLDEN_RATIO:            1.618;
+// ... add your ratio here
+// http://en.wikipedia.org/wiki/Golden_ratio
+
+// set your ratio here
+$scale:                   $PERFECT_FIFTH;
+
+$base-font-size:          100% !default;
+$base-line-height:        150% !default;
+$rem-base:                16px !default;
+
+$paragraph-margin:        0.75rem;
+
+// every font is different
+// scales that look good with one font will not look good with another
+// pls experiment
+$serif-font-family:       "Georgia", "Times", serif !default;
+$sans-serif-font-family:  "Helvetica Neue", "Helvetica", Arial, sans-serif !default;
+
+$headings-font-family:    $sans-serif-font-family;
+$body-font-family:        $sans-serif-font-family;
+
+$heading-text-color:      #20202e;
+$body-text-color:         #232330;
+$text-accent-color:       #bc131a;
+$text-muted-color:        #889;
+
+
+html,
+body {
+  //font-size: 100%;
+
+  // prevents ios safari from zooming on orientation change (maybe)
+  // -webkit-text-size-adjust: none;
+}
+
+// body typography
+body {
+  color: $body-text-color;
+  font-family: $body-font-family;
+}
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 $paragraph-margin;
+  color: $heading-text-color;
+  font-family: $headings-font-family;
+  line-height: 1.1;
+}
+
+// typographic scale for headings
+// built based on your scale
+h6 { color: $text-muted-color; }
+
+// paragraph text
+p {
+  margin: 0 0 $paragraph-margin;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: $base-line-height;
+
+  &.lead {
+    font-size: 1rem * $scale * 0.85;
+    line-height: 1.33;
+  }
+}
+
+// lists
+ul,
+ol {
+  padding-left: 1.5rem;
+
+  li {
+    line-height: $base-line-height;
+  }
+
+  &.unstyled {
+    padding: 0;
+    list-style: none;
+  }
+
+  &.inline {
+    margin: 0 1rem $paragraph-margin -1rem;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+    & > li {
+      display: block;
+      float: left;
+      margin-left: 1rem;
+      list-style: none;
+    }
+  }
+}
+
+dl {
+  margin: 0 0 $paragraph-margin;
+  line-height: $base-line-height;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 0.5rem;
+}
+
+// blockquotes
+blockquote {
+  position: relative;
+  margin: 1.5rem 1rem 1.5rem 3rem;
+
+  p {
+    @extend .lead;
+  }
+
+  &:before {
+    content: "“";
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -3rem;
+    color: $text-muted-color;
+    font-size: 5rem;
+    line-height: 1;
+  }
+}
+
+
+// utility classes
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.text-accent { color: $text-accent-color; }
+.text-muted { color: $text-muted-color; }
+
+
+// media queries
+@media #{$small} {
+  h1 { font-size: 1rem * $scale * $scale * $scale * $scale; }
+  h2 { font-size: 1rem * $scale * $scale * $scale; }
+  h3 { font-size: 1rem * $scale * $scale; }
+  h4 { font-size: 1rem * $scale; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 1rem; }
+
+  p.lead {
+    font-size: 1rem * $scale;
+  }
+}

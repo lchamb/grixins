@@ -1,0 +1,38 @@
+//
+// grid
+//
+
+// variables
+$grid-width:     960px;
+$total-columns:  12;
+$column-gutter:  30px;
+
+// mixins
+@mixin row() {
+  position: relative;
+  width: 100%;
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  @include clearfix();
+}
+
+@mixin columns($columns: $total-columns) {
+  float: left;
+  width: 100%;
+  max-width: percentage($columns / $total-columns);
+  padding-left: $column-gutter / 2;
+  padding-right: $column-gutter / 2;
+}
+
+// html classes
+.row {
+  @include row();
+  
+  background: #ccc;
+  margin-bottom: 20px;
+}
+
+@for $i from 1 through $total-columns {
+  .span-#{$i} { @include columns($i); }
+}
