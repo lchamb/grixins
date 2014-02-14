@@ -4,8 +4,8 @@
 
 // variables
 $grid-width:     960px;
-$total-columns:  12;
 $column-gutter:  30px;
+$total-columns:  12;
 
 // mixins
 @mixin row() {
@@ -17,19 +17,27 @@ $column-gutter:  30px;
   @include clearfix();
 }
 
-@mixin columns($columns: $total-columns) {
+@mixin columns($columns: $total-columns, $centered: false) {
   float: left;
   width: 100%;
   max-width: percentage($columns / $total-columns);
   padding-left: $column-gutter / 2;
   padding-right: $column-gutter / 2;
+
+  @if $centered == true {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @else {
+    float: left;
+  }
 }
 
 // html classes
 .row {
   @include row();
-  
-  background: #ccc;
+
   margin-bottom: 20px;
 }
 
