@@ -3,13 +3,7 @@
 //
 
 // variables
-$prefixes: true;
-$rem-base: 16px !default;
-
-// functions
-@function rem-calc($pixel-width) {
-   @return $pixel-width / $rem-base * 1rem;
-}
+$prefixes: true !default;
 
 // mixins
 @mixin box-sizing($type:border-box) {
@@ -26,15 +20,6 @@ $rem-base: 16px !default;
   &:after { clear: both; }
 }
 
-@mixin background-size($size) {
-  @if $prefixes {
-    -webkit-background-size: $size;
-    -moz-background-size: $size;
-    -o-background-size: $size;
-  }
-  background-size: $size;
-}
-
 @mixin border-radius($radius:$global-radius) {
   @if $prefixes {
     -webkit-border-radius: $radius;
@@ -48,12 +33,4 @@ $rem-base: 16px !default;
     -moz-box-shadow: $shadows;
   }
   box-shadow: $shadows;
-}
-
-@mixin transition($property:all, $speed:300ms, $ease:ease-out) {
-  @if $prefixes {
-    -webkit-transition: $property $speed $ease;
-    -moz-transition: $property $speed $ease;
-  }
-  transition: $property $speed $ease;
 }

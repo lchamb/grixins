@@ -1,5 +1,5 @@
 //
-// how to sass manifest
+// scss manifest
 //
 
 // set character encoding
@@ -9,27 +9,13 @@
 // git.io/normalize
 @import "normalize";
 
-// global variables and mixins
+// global variables and (non-grid) mixins
 @import "variables",
         "mixins";
 
-// animations
-// https://medium.com/design-ux/926eb80d64e3
-@import "animations";
+// grixins = grid mixins
+@import "grixins";
 
-// structure and grid system
-@import "base",
-        "grid";
-
-// native browser elements
+// styles used in the docs and example app
 @import "typography",
-        "buttons",
-        "forms";
-
-// non-native but common ui elements
-// @import "alerts",
-//         "icons";
-
-// application-specific elements
-// @import "calendars",
-//         "charts";
+        "docs";

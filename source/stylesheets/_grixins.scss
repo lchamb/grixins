@@ -1,13 +1,21 @@
 //
-// grid
+// grixins = grid mixins
 //
 
 // variables
-$grid-width:     960px;
-$column-gutter:  30px;
-$total-columns:  12;
+$grid-width:     960px !default;
+$column-gutter:  30px !default;
+$total-columns:  12 !default;
 
-// mixins
+// set all elements to box-sizing: border-box;
+// required for grixins
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+// grid mixins
 @mixin row() {
   position: relative;
   width: 100%;
@@ -34,7 +42,7 @@ $total-columns:  12;
   }
 }
 
-// html classes
+// example html classes
 .row {
   @include row();
 
