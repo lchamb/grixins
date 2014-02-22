@@ -16,13 +16,13 @@ $base-font-size:          100% !default;
 $base-line-height:        150% !default;
 $rem-base:                16px !default;
 
-$paragraph-margin:        0.75rem;
+$paragraph-margin:        1rem;
 
 // every font is different
 // scales that look good with one font will not look good with another
 // pls experiment
 $serif-font-family:       "Georgia", "Times", serif !default;
-$sans-serif-font-family:  "Helvetica Neue", "Helvetica", Arial, sans-serif !default;
+$sans-serif-font-family:  "Lato", "Helvetica Neue", "Helvetica", Arial, sans-serif !default;
 
 $headings-font-family:    $sans-serif-font-family;
 $body-font-family:        $sans-serif-font-family;
