@@ -4,9 +4,13 @@
 
 // example html classes
 .row {
+  margin-bottom: $column-gutter;
+  
   @include row();
 
-  margin-bottom: $column-gutter;
+  .row {
+    @include row(nest);
+  }
 }
 
 @for $i from 1 through $total-columns {
@@ -22,6 +26,11 @@
 }
 
 .grid-content {
-  padding: 1rem;
-  background: #e7e8e9;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: $muted;
+  
+  .grid-content {
+    background: darken($muted, 15%);
+  }
 }
