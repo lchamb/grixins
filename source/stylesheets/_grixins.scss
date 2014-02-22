@@ -3,12 +3,14 @@
 //
 
 // variables
+// move these to your global variables file if you like
 $grid-width:     960px !default;
 $column-gutter:  30px !default;
 $total-columns:  12 !default;
 
 // set all elements to box-sizing: border-box;
 // required for grixins
+// move this to your base or reset file if you like
 *,
 *:before,
 *:after {
@@ -25,20 +27,15 @@ $total-columns:  12 !default;
   @include clearfix();
 }
 
-@mixin columns($columns: $total-columns, $centered: false) {
+@mixin columns($columns: $total-columns, $offset: 0) {
   float: left;
   width: 100%;
   max-width: percentage($columns / $total-columns);
   padding-left: $column-gutter / 2;
   padding-right: $column-gutter / 2;
 
-  @if $centered == true {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @else {
-    float: left;
+  @if $offset > 0 {
+    margin-left: percentage($offset / $total-columns);
   }
 }
 
@@ -46,9 +43,17 @@ $total-columns:  12 !default;
 .row {
   @include row();
 
-  margin-bottom: 20px;
+  margin-bottom: $column-gutter;
 }
 
 @for $i from 1 through $total-columns {
   .span-#{$i} { @include columns($i); }
+}
+
+.span-8-offset-4 {
+  @include columns(8,4);
+}
+
+.span-9-offset-3 {
+  @include columns(9,3);
 }
