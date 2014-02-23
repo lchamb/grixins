@@ -1,0 +1,679 @@
+@charset "UTF-8";
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 22, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 154, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 190, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 270, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 282, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 297, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 307, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 317, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 341, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 350, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 17, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_grixins.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 45, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+body {
+  color: #232330;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+/* line 56, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
+  color: #20202e;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.1; }
+
+/* line 65, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+h6 {
+  color: #888899; }
+
+/* line 68, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+p {
+  margin: 0 0 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 150%; }
+  /* line 75, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  p.lead, blockquote p {
+    font-size: 1.275rem;
+    line-height: 1.33; }
+
+/* line 83, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+ul,
+ol {
+  padding-left: 1.5rem; }
+  /* line 86, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  ul li,
+  ol li {
+    line-height: 150%; }
+  /* line 90, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  ul.unstyled,
+  ol.unstyled {
+    padding: 0;
+    list-style: none; }
+  /* line 95, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  ul.inline,
+  ol.inline {
+    margin: 0 1rem 1rem -1rem;
+    padding: 0;
+    list-style: none;
+    overflow: hidden; }
+    /* line 101, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+    ul.inline > li,
+    ol.inline > li {
+      display: block;
+      float: left;
+      margin-left: 1rem;
+      list-style: none; }
+
+/* line 110, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+dl {
+  margin: 0 0 1rem;
+  line-height: 150%; }
+
+/* line 115, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+dt {
+  font-weight: bold; }
+
+/* line 119, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+dd {
+  margin: 0 0 0.5rem; }
+
+/* line 124, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+blockquote {
+  position: relative;
+  margin: 1.5rem 1rem 1.5rem 3rem; }
+  /* line 132, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  blockquote:before {
+    content: "“";
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -3rem;
+    color: #888899;
+    font-size: 5rem;
+    line-height: 1; }
+
+/* line 146, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+.text-left {
+  text-align: left; }
+
+/* line 147, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+.text-center {
+  text-align: center; }
+
+/* line 148, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+.text-right {
+  text-align: right; }
+
+/* line 150, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+.text-accent {
+  color: #bc131a; }
+
+/* line 151, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+.text-muted {
+  color: #888899; }
+
+@media only screen and (min-width: 768px) {
+  /* line 156, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  h1 {
+    font-size: 5.0625rem; }
+
+  /* line 157, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  h2 {
+    font-size: 3.375rem; }
+
+  /* line 158, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  h3 {
+    font-size: 2.25rem; }
+
+  /* line 159, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  h4 {
+    font-size: 1.5rem; }
+
+  /* line 160, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  h5 {
+    font-size: 1rem; }
+
+  /* line 161, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  h6 {
+    font-size: 1rem; }
+
+  /* line 163, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_typography.scss */
+  p.lead, blockquote p {
+    font-size: 1.5rem; } }
+/* line 5, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_code.scss */
+pre.code {
+  padding: 1rem;
+  background: #e7e8e9;
+  line-height: 1.4; }
+
+/* line 5, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+body {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/* line 10, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+footer {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1; }
+  /* line 19, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_mixins.scss */
+  footer:before, footer:after {
+    content: " ";
+    display: table; }
+  /* line 20, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_mixins.scss */
+  footer:after {
+    clear: both; }
+
+/* line 17, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.row {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1; }
+  /* line 19, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_mixins.scss */
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  /* line 20, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_mixins.scss */
+  .row:after {
+    clear: both; }
+  /* line 22, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+  .row .row {
+    margin-bottom: 0;
+    position: relative;
+    width: auto;
+    margin-right: -15px;
+    margin-left: -15px;
+    *zoom: 1; }
+    /* line 19, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_mixins.scss */
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    /* line 20, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/_mixins.scss */
+    .row .row:after {
+      clear: both; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-1 {
+  float: left;
+  width: 100%;
+  max-width: 8.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-2 {
+  float: left;
+  width: 100%;
+  max-width: 16.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-3 {
+  float: left;
+  width: 100%;
+  max-width: 25%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-4 {
+  float: left;
+  width: 100%;
+  max-width: 33.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-5 {
+  float: left;
+  width: 100%;
+  max-width: 41.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-6 {
+  float: left;
+  width: 100%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-7 {
+  float: left;
+  width: 100%;
+  max-width: 58.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-8 {
+  float: left;
+  width: 100%;
+  max-width: 66.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-9 {
+  float: left;
+  width: 100%;
+  max-width: 75%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-10 {
+  float: left;
+  width: 100%;
+  max-width: 83.33333%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-11 {
+  float: left;
+  width: 100%;
+  max-width: 91.66667%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 30, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-12 {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 33, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-8-offset-4 {
+  float: left;
+  width: 100%;
+  max-width: 66.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 33.33333%; }
+
+/* line 37, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.span-9-offset-3 {
+  float: left;
+  width: 100%;
+  max-width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 25%; }
+
+/* line 41, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+.grid-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #e7e8e9;
+  color: #555;
+  text-align: center; }
+  /* line 48, /Users/lchamb/Dev/github/lchamb/grixins/source/stylesheets/docs/_examples.scss */
+  .grid-content .grid-content {
+    background: #bfc2c4; }
