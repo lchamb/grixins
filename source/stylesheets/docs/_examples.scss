@@ -3,49 +3,54 @@
 //
 
 body {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 15px 30px;
 }
 
 footer {
   text-align: center;
-  
+
   @include row();
 }
 
 // example html classes
-.row {
-  margin-bottom: $column-gutter;
-  
-  @include row();
-
-  .row {
-    margin-bottom: 0;
-
-    @include row(nest);
-  }
-}
-
-@for $i from 1 through $total-columns {
-  .span-#{$i} { @include columns($i); }
-}
-
-.span-8-offset-4 {
-  @include columns(8,4);
-}
-
-.span-9-offset-3 {
-  @include columns(9,3);
-}
-
 .grid-content {
+  margin-bottom: $column-gutter;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background: $muted;
   color: #555;
   text-align: center;
-  
+
   .grid-content {
     background: darken($muted, 15%);
   }
 }
+
+@media #{$small} {
+  // example html classes
+  // usually you want to put grid classes inside a media query
+  // but it depends on your needs
+  .row {
+    @include row();
+
+    .row {
+      margin-bottom: 0;
+
+      @include row(nest);
+    }
+  }
+
+  @for $i from 1 through $total-columns {
+    .span-#{$i} { @include columns($i); }
+  }
+
+  .span-8-offset-4 {
+    @include columns(8,4);
+  }
+
+  .span-9-offset-3 {
+    @include columns(9,3);
+  }
+}
+
+
